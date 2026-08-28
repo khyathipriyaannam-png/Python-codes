@@ -1,0 +1,20 @@
+units = int(input("Enter Your Units:"))
+senior = input("Enter Senior or Not: ").lower()=="senior"
+if units <= 100:
+    bill = units * 1.5
+elif units <= 200:
+    bill = units * 2.5
+elif units <= 500:
+    bill = units * 4
+elif 500 < units <= 800:
+    bill = units * 6
+
+else:
+    bill = units * 6 * 1.5
+
+if senior:
+    bill *= 0.9
+
+print(bill)
+    
+

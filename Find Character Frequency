@@ -1,0 +1,6 @@
+text = input("Enter a string: ")
+char = input("Enter character to find: ")
+
+count = text.count(char)
+
+print("Frequency =", count)
